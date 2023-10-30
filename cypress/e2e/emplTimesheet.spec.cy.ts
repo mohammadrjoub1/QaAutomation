@@ -1,6 +1,6 @@
-import LoginPage from "../../support/page-objects/LoginPage"
+import VacancyHelper from "../support/helper/candidateHelper";
+import LoginPage from "../support/page-objects/LoginPage";
 
-import VacancyHelper from "../../support/helper/candidateHelper";
 
 const loginObj: LoginPage = new LoginPage();
 const apisHelper: VacancyHelper = new VacancyHelper();
