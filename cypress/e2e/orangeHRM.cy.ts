@@ -1,4 +1,5 @@
 ﻿import { Login } from "../support/helpers/login";
+import { faker } from "@faker-js/faker";
 
 describe("testing", () => {
   beforeEach("Will Occur Befor Every Test", () => {
