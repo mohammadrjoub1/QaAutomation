@@ -1,4 +1,4 @@
-﻿import { AddTimeSheet } from "../support/helpers/AddTimeSheet";
+import { AddTimeSheet } from "../support/helpers/AddTimeSheet";
 import { CreateEmployeeViaApi } from "../support/helpers/CreateEmployee";
 import { DeletEmployees } from "../support/helpers/deleteEmployee";
 import { LogOut } from "../support/helpers/logOut";
@@ -18,6 +18,10 @@ import { faker } from "@faker-js/faker";
 let empNumber;
 let randomNumber = Math.floor(Math.random() * (50 - 1 + 1)) + 1;
 describe("testing time sheet", () => {
+import { Login } from "../support/helpers/login";
+import { faker } from "@faker-js/faker";
+
+describe("testing", () => {
   beforeEach("Will Occur Befor Every Test", () => {
     cy.visit("/auth/login").then(() => {
       Login.login("Admin", "admin123");
@@ -37,5 +41,6 @@ describe("testing time sheet", () => {
       Login.login(`${data.username}${randomNumber}`, data.password);
       AddTimeSheet.addTimeSheet();
     });
+  it("testing ", () => {
   });
 });
