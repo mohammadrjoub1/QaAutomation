@@ -18,6 +18,12 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// allure
 import '@shelex/cypress-allure-plugin';
 
+// api plugin
 import 'cypress-plugin-api'
+
+// cypress/support/index.d.ts
+/// <reference types='cypress-tags' />
