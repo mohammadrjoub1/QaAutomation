@@ -1,12 +1,9 @@
-import { Login } from "../support/helpers/login";
 import { faker } from "@faker-js/faker";
 
-describe("testing", () => {
+describe("Senario #1", () => {
   beforeEach("senarion #1", () => {
-    Login.login("Admin", "admin123"); // Perform the login
-
+    cy.login("Admin", "admin123");
   });
 
-  it("TC #1", () => {
-  });
+  it("TC #1", () => {});
 });
