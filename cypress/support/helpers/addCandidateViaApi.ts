@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 
 const apiUrl =
-  "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/recruitment/candidates";
+  "/api/v2/recruitment/candidates";
 
 export class addCandidateViaApi {
   static addCandidate() {
@@ -31,7 +31,7 @@ export class addCandidateViaApi {
   static shortListCandidate(candidateId) {
     cy.request({
       method: "PUT",
-      url: `https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/recruitment/candidates/${candidateId}/shortlist`,
+      url: `/api/v2/recruitment/candidates/${candidateId}/shortlist`,
       body: {
         note: null,
       },

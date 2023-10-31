@@ -10,7 +10,7 @@ export class createEmployeeViaApi {
     //add new employee using API
     cy.request({
       method: "POST",
-      url: "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees",
+      url: "/api/v2/pim/employees",
       body: {
         empPicture: null,
         employeeId: empID,
@@ -28,7 +28,7 @@ export class createEmployeeViaApi {
     //creat user login deails for new employee
     cy.request({
       method: "POST",
-      url: "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/admin/users",
+      url: "/api/v2/admin/users",
       body: {
         empNumber: empNumberr,
         password: password,

@@ -8,7 +8,7 @@ class addEmployeeViaApi {
         cy.request({
 
             method: 'Post',
-            url: 'https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees',
+            url: '/api/v2/pim/employees',
             body: {
 
                 firstName,
